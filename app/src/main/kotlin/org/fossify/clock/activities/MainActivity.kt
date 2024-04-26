@@ -130,7 +130,6 @@ class MainActivity : SimpleActivity() {
         binding.mainToolbar.setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.sort -> getViewPagerAdapter()?.showAlarmSortDialog()
-                R.id.more_apps_from_us -> launchMoreAppsFromUsIntent()
                 R.id.settings -> launchSettings()
                 else -> return@setOnMenuItemClickListener false
             }
@@ -141,7 +140,6 @@ class MainActivity : SimpleActivity() {
     private fun refreshMenuItems() {
         binding.mainToolbar.menu.apply {
             findItem(R.id.sort).isVisible = binding.viewPager.currentItem == TAB_ALARM
-            findItem(R.id.more_apps_from_us).isVisible = !resources.getBoolean(org.fossify.commons.R.bool.hide_google_relations)
         }
     }
 

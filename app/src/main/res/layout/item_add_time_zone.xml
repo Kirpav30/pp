@@ -8,7 +8,7 @@
     android:clickable="true"
     android:focusable="true">
 
-    <org.fossify.commons.views.MyTextView
+    <TextView
         android:id="@+id/add_time_zone_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

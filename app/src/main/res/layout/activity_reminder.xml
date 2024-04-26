@@ -6,19 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <org.fossify.commons.views.MyTextView
+    <TextView
         android:id="@+id/reminder_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="84dp"
         android:textSize="@dimen/reminder_activity_title_size"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="@string/time_expired" />
 
-    <org.fossify.commons.views.MyTextView
+    <TextView
         android:id="@+id/reminder_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/reminder_draggable" />
 
-    <org.fossify.commons.views.MyTextView
+    <TextView
         android:id="@+id/snooze_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -62,9 +62,10 @@
         android:src="@drawable/pulsing_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/reminder_dismiss"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toEndOf="@+id/reminder_snooze"
-        app:layout_constraintTop_toBottomOf="@+id/reminder_text" />
+        app:layout_constraintTop_toBottomOf="@+id/reminder_text"
+        app:layout_constraintVertical_bias="0.374" />
 
     <ImageView
         android:id="@+id/reminder_draggable"
@@ -77,7 +78,8 @@
         app:layout_constraintEnd_toStartOf="@+id/reminder_dismiss"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/reminder_snooze"
-        app:layout_constraintTop_toBottomOf="@+id/reminder_text" />
+        app:layout_constraintTop_toBottomOf="@+id/reminder_text"
+        app:layout_constraintVertical_bias="0.124" />
 
     <ImageView
         android:id="@+id/reminder_dismiss"
@@ -92,7 +94,7 @@
         app:layout_constraintStart_toEndOf="@+id/reminder_draggable"
         app:layout_constraintTop_toTopOf="@+id/reminder_draggable" />
 
-    <org.fossify.commons.views.MyTextView
+    <TextView
         android:id="@+id/dismiss_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -102,7 +104,7 @@
         app:layout_constraintStart_toEndOf="@+id/reminder_draggable"
         app:layout_constraintTop_toBottomOf="@+id/reminder_dismiss" />
 
-    <org.fossify.commons.views.MyTextView
+    <TextView
         android:id="@+id/reminder_guide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -110,8 +112,10 @@
         android:text="@string/swipe_right_to_dismiss"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reminder_draggable" />
+        app:layout_constraintTop_toBottomOf="@+id/reminder_draggable"
+        app:layout_constraintVertical_bias="0.688" />
 
     <ImageView
         android:id="@+id/reminder_stop"

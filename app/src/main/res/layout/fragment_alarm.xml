@@ -19,12 +19,12 @@
             android:overScrollMode="ifContentScrolls"
             android:paddingBottom="@dimen/fab_list_bottom_padding"
             android:scrollbars="none"
-            app:layoutManager="org.fossify.commons.views.MyLinearLayoutManager"
+            app:layoutManager="LinearLayoutManager"
             tools:listitem="@layout/item_alarm" />
 
     </RelativeLayout>
 
-    <org.fossify.commons.views.MyFloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/alarm_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

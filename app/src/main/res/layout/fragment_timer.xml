@@ -20,7 +20,7 @@
         tools:itemCount="3"
         tools:listitem="@layout/item_timer" />
 
-    <org.fossify.commons.views.MyFloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/timer_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

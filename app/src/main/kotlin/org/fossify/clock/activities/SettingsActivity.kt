@@ -29,7 +29,6 @@ class SettingsActivity : SimpleActivity() {
     override fun onResume() {
         super.onResume()
         setupToolbar(binding.settingsToolbar, NavigationIcon.Arrow)
-        setupPurchaseThankYou()
         setupUseEnglish()
         setupLanguage()
         setupAlarmMaxReminder()
@@ -39,7 +38,6 @@ class SettingsActivity : SimpleActivity() {
         updateTextColors(binding.settingsHolder)
 
         arrayOf(
-            binding.settingsColorCustomizationSectionLabel,
             binding.settingsGeneralSettingsLabel,
             binding.settingsAlarmTabLabel,
             binding.settingsTimerTabLabel,
@@ -48,12 +46,6 @@ class SettingsActivity : SimpleActivity() {
         }
     }
 
-    private fun setupPurchaseThankYou() {
-        binding.settingsPurchaseThankYouHolder.beGoneIf(isOrWasThankYouInstalled())
-        binding.settingsPurchaseThankYouHolder.setOnClickListener {
-            launchPurchaseThankYouIntent()
-        }
-    }
 
     private fun setupUseEnglish() {
         binding.settingsUseEnglishHolder.beVisibleIf((config.wasUseEnglishToggled || Locale.getDefault().language != "en") && !isTiramisuPlus())

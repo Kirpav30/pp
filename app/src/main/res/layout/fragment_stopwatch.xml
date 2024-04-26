@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <org.fossify.commons.views.MyTextView
+    <TextView
         android:id="@+id/stopwatch_time"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,6 +15,7 @@
         android:gravity="center_horizontal"
         android:padding="@dimen/small_margin"
         android:textSize="@dimen/stopwatch_text_size"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -98,7 +99,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/stopwatch_play_pause" />
 
-    <org.fossify.commons.views.MyTextView
+    <TextView
         android:id="@+id/stopwatch_lap"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/stopwatch_button_small_size"
@@ -108,6 +109,7 @@
         android:paddingLeft="@dimen/activity_margin"
         android:paddingRight="@dimen/activity_margin"
         android:text="@string/lap"
+        android:textColor="#000000"
         android:textAllCaps="true"
         android:textSize="@dimen/bigger_text_size"
         android:visibility="gone"
