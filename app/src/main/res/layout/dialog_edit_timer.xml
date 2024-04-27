@@ -93,7 +93,7 @@
                 android:id="@+id/edit_timer_label_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_label_vector" />
+                android:src="@android:drawable/stat_notify_chat" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/edit_timer_hint"

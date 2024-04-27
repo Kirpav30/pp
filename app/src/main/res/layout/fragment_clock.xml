@@ -62,7 +62,7 @@
 
     </RelativeLayout>
 
-    <org.fossify.commons.views.MyFloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/clock_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

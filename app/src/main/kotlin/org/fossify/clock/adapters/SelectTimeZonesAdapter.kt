@@ -56,7 +56,6 @@ class SelectTimeZonesAdapter(val activity: SimpleActivity, val timeZones: ArrayL
                 addTimeZoneCheckbox.isChecked = isSelected
                 addTimeZoneTitle.text = myTimeZone.title
                 addTimeZoneTitle.setTextColor(textColor)
-
                 addTimeZoneCheckbox.setColors(textColor, primaryColor, backgroundColor)
                 addTimeZoneHolder.setOnClickListener {
                     viewClicked(myTimeZone)
